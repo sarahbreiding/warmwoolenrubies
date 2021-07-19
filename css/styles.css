@@ -281,7 +281,7 @@ a {
 
 .resource-item {
     background: #fffc;
-    display: flex;
+    display: block;
     flex-grow: 1;
     margin: 1em;
     width: 13em;

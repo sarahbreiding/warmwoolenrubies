@@ -65,6 +65,10 @@
     background: #fafafa;
 }
 
+.resource-item.pattern {
+    display: flex;
+}
+
 .pattern-meta-box {
     display: flex;
     flex-wrap: wrap;
