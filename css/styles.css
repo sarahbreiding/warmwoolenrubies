@@ -257,6 +257,7 @@ a {
     position: absolute;
     top: 10%;
     left: 10%;
+    text-align:center;
     transition: .3s all ease;
     transition-delay: 0s;
     visibility: hidden;
@@ -265,8 +266,12 @@ a {
 .resources-container, .contact-container {
     position: relative;
     height: 100vh;
-    min-height: 600px;
+    height: 100%;
     margin: 0 auto;
+}
+
+.resources-container {
+    height: 100%;
 }
 
 .resource-section {
@@ -276,7 +281,7 @@ a {
 
 .resource-item {
     background: #fffc;
-    display: block;
+    display: flex;
     flex-grow: 1;
     margin: 1em;
     width: 13em;
@@ -292,9 +297,9 @@ a {
 
 .resource-item-title {
     position: relative;
-    top: -20px;
+    top: 0px;
     left: -70px;
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 .resource-item-icon {
@@ -306,6 +311,7 @@ a {
     position: relative;
     height: 100vh;
     min-height: 600px;
+    height: 100%;
 }
 
 .contact-container {
@@ -325,9 +331,9 @@ input, textarea {
   
   .contact-form-section {
     background: #edebe7;
-    box-shadow: 0 10px 50px -5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 10px -5px rgba(0, 0, 0, 0.18);   
     margin: 1% 0;
-    padding: 3%;
+    padding: 6%;
   }
   
   .field {

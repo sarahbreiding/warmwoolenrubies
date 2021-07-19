@@ -72,11 +72,11 @@
 
 .pattern-meta {
     margin: 0 10px;
-    width: 400px;
+    max-width: 400px;
 }
 
 .pattern-main-img {
-    max-width: 400px;
+    max-width: 100%;
     box-shadow: 0 10px 50px -5px rgba(0, 0, 0, 0.4);
 }
 
