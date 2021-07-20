@@ -16,6 +16,11 @@ $('.owl-carousel').owlCarousel({
 })
 
 $('.resource-item.pattern').click(getDataName);
+var url = window.location.href;
+if (url.indexOf('#') >= 0) {
+var pattern = url.split('#')[1];
+    togglePattern(pattern)
+}
 
 function getDataName(){
     var patternName = $(this).data('name');
@@ -36,10 +41,13 @@ function updateURL(patternName) {
     }
 }
 
+
 function togglePattern(patternName) {
     $('#' + patternName).css('display','block');
 }
 
+
+/*Contact Form*/
 document.querySelector("form").addEventListener("submit", handleSubmit);
 
 var handleSubmit = (e) => {
@@ -54,6 +62,8 @@ var handleSubmit = (e) => {
     alert(error))
 }
 
+
+/*Homepage Scroll*/
 $('.nav-link').click(function (e) {
     e.preventDefault();
 
@@ -84,5 +94,4 @@ function activeSection() {
     });
 };
 
-// Call on page load too!
 activeSection();
